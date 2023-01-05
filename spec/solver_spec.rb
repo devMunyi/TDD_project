@@ -7,5 +7,9 @@ RSpec.describe Solver do
     it 'returns 1 when n equal 0' do 
       expect(solver_obj.factorial(0)).to eq(1)
     end
+
+    it 'returns the correct value for factorial of a given number' do 
+      expect(solver_obj.factorial(3)).to eq(6)
+    end
   end
 end
