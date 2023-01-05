@@ -11,5 +11,9 @@ RSpec.describe Solver do
     it 'returns the correct value for factorial of a given number' do 
       expect(solver_obj.factorial(3)).to eq(6)
     end
+
+    it 'raise an exception when n is negative' do 
+      expect(solver_obj.factorial(-2)).to match('No negative number') 
+    end
   end
 end
