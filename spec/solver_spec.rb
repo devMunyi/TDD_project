@@ -16,4 +16,9 @@ RSpec.describe Solver do
       expect(solver_obj.factorial(-2)).to match('No negative number') 
     end
   end
+  describe '#reverse method' do 
+    it 'Returns the reversed word' do 
+      expect(solver_obj.reverse('hello')).to eq('olleh')
+    end
+  end
 end
