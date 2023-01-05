@@ -17,8 +17,11 @@ RSpec.describe Solver do
     end
   end
   describe '#reverse method' do 
-    it 'Returns the reversed word' do 
+    it 'returns the reversed word' do 
       expect(solver_obj.reverse('hello')).to eq('olleh')
+    end
+    it 'returns empty string when word is empty' do 
+      expect(solver_obj.reverse('')).to eq('')
     end
   end
 end
