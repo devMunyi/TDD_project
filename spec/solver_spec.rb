@@ -36,5 +36,14 @@ RSpec.describe Solver do
     it 'returns buzz if n is divisible by 5' do
       expect(solver_obj.fizzbuzz(5)).to eq('buzz')
     end
+
+    it 'returns fizzbuzz if number is divisible by 3 and 5' do
+      expect(solver_obj.fizzbuzz(15)).to eq('fizzbuzz')
+      expect(solver_obj.fizzbuzz(30)).to eq('fizzbuzz')
+    end
+
+    it 'return the same number if number is not divisible by 3 and 5' do
+      expect(solver_obj.fizzbuzz(7)).to eq('7')
+    end
   end
 end
