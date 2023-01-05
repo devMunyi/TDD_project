@@ -9,4 +9,8 @@ class Solver
     # recursion
     n * factorial(n - 1)
   end
+
+  def reverse(word)
+    word.reverse
+  end
 end
