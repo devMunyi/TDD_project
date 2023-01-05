@@ -1,13 +1,13 @@
-class Solver 
-  def factorial(n)
+class Solver
+  def factorial(num)
     # handle exception
-    return 'No negative number' if n < 0
+    return 'No negative number' if num.negative?
 
     # base case
-    return 1 if n == 0
+    return 1 if num.zero?
 
     # recursion
-    n * factorial(n - 1)
+    num * factorial(num - 1)
   end
 
   def reverse(word)
