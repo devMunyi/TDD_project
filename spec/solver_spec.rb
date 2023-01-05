@@ -26,4 +26,10 @@ RSpec.describe Solver do
       expect(solver_obj.reverse('')).to eq('')
     end
   end
+
+  describe '#fizzbuzz' do
+    it 'returns fizz if n is divisible by 3' do
+      expect(solver_obj.fizzbuzz(3)).to eq('fizz')
+    end
+  end
 end
