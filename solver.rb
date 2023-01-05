@@ -11,6 +11,9 @@ class Solver
   end
 
   def reverse(word)
-    word.reverse
+    word_letters_array = word.chars
+    reversed = []
+    word.size.times { reversed << word_letters_array.pop }
+    reversed.join
   end
 end
