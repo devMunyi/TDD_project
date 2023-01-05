@@ -16,4 +16,8 @@ class Solver
     word.size.times { reversed << word_letters_array.pop }
     reversed.join
   end
+
+  def fizzbuzz(num)
+    return 'fizz' if num % 3 == 0
+  end
 end
