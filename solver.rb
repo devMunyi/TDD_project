@@ -1,5 +1,8 @@
 class Solver 
   def factorial(n)
+    # handle exception
+    return 'No negative number' if n < 0
+
     # base case
     return 1 if n == 0
 
